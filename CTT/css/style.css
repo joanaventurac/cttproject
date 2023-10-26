@@ -1,0 +1,417 @@
+/********** Template CSS **********/
+:root {
+    /*--primary: #DF0024;*/
+    --primary: #E23E57;
+    --secondary: #999999;
+    --light: #F2F8FE;
+    --dark: #111111;
+    --white: #fff;
+    --bg: #f5f4f4;
+    
+}
+
+/* LOGIN PAGE */ 
+
+
+
+body {
+    font-family: 'Instrument Sans', sans-serif !important;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 60px;
+    z-index: 99;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-weight: 500 !important;
+}
+
+body {
+    color: #303030 !important; 
+}
+
+
+/* FORMULARIO LOGIN */
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #ffffff;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+
+/* BUTTON LOGIN 
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--primary);
+  }
+  
+  /* plus sign 
+  .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 17px;
+  }
+  
+  .sign svg path {
+    fill: white;
+  }
+  /* text 
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+
+  /* hover effect on button width 
+  .login:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .login:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text 
+  .login:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect
+  .login:active {
+    transform: translate(2px ,2px);
+  }
+
+  /* END OF BUTTON LOGIN */
+
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border: var(--white);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--light);
+    color: var(--primary);
+    border: var(--white);
+    
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+/*** Navbar ***/
+
+
+.btn.btn-square{
+    background-color: var(--primary)!important;
+    color: var(--white) !important;
+}
+
+.btn.btn {
+    background-color: var(--primary)!important;
+    color: var(--white) !important;
+}
+
+.btn.btn:hover {
+color: var(--primary) !important;
+background-color: var(--white) !important;
+}
+
+.btn.btn-link:hover {
+    background-color: var(--primary)!important;
+    color: var(--white) !important;
+}
+
+.btn.btn-link {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+}
+
+.fab.fa:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+
+}
+
+nav {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand {
+    height: 75px;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 30px;
+    padding: 25px 0;
+    color: var(--dark);
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover  {
+    color: var(--primary) !important;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+#date {
+    border:rgba(17, 17, 17, .1);
+    border: solid;
+    height: 30px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+.navbar .btn:hover {
+    color: #FFFFFF !important;
+    background: var(--primary) !important;
+}
+
+
+/*** Header ***/
+.hero-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--secondary);
+}
+
+.fs-5 {
+    color: var(--primary);
+}
+
+.fa {
+    color: var(--primary);
+}
+
+
+/* PARA OS LINKS DA RESERVA */
+
+#reserve {
+    color: var(--primary);
+}
+
+#reserve:hover {
+    color: var(--dark);
+}
+
+/* FIM DOS LINKS DE RESERVA */ 
+
+
+/*** FAQs ***/
+.accordion .accordion-item {
+    border: none;
+    margin-bottom: 15px;
+}
+
+.accordion .accordion-button {
+    background: #f5f4f4;
+    border-radius: 2px;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: #FFFFFF;
+    background: var(--primary);
+    box-shadow: none;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion .accordion-body {
+    padding: 15px 0 0 0;
+}
+
+
+/*** FOOTER ***/
+
+
+#rodape {
+    background: var(--bg);
+    color: var(--dark);
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--secondary);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--secondary);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .btn.btn-square {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.footer .btn.btn-square:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    border-top: 1px solid rgba(17, 17, 17, .1);
+}
+
+.footer .copyright a {
+    color: var(--primary);
+}
+
+.footer .copyright a:hover {
+    color: var(--dark);
+}
+
+/* FIM FOOTER */
